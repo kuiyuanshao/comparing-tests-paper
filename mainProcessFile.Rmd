@@ -22,13 +22,13 @@ source("plotFuns.R")
 ```{r, warning = F}
 #set.seed(2021)
 #population1 <- random_population(1e7, mean = 40)
-#save(population1, file = "popu.RData")
+#save(population1, file = "simPopu1.RData", compress = "xz")
 ```
 
 # 35, 100 = 25
 # 40, 125 = 30
 ```{r }
-#load(popu.RData)
+#load("simPopu1.RData")
 sample1.1 <- sampling(population1, ncluster1 = 35, ncluster2 = 100, cluster_observ = 200)
 strat_design1.1 <- svydesign(id = ~ cluster1 + cluster2 + ID_unit, strata = ~ strata, 
                              data = sample1.1, weights = ~ pw)

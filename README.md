@@ -1,2 +1,2 @@
-# CTFSD_NH
-Compared the performance for both Empirical and Working Wald, Score and Likelihood Ratio tests in survey generalised linear models under the complex survey designs and null hypothesis.
+# Comparing tests in generalised linear models under complex sampling
+Compared the performance for naive Wald, quasi-score, the Rao-Scott corrections for likelihood ratio, Wald, and score tests in generalised linear models under the complex survey designs.
